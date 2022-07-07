@@ -1,0 +1,7 @@
+[package]
+name = "ramdom-variables"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+beginner_tools = "1.1.1"
