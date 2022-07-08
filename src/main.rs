@@ -1,14 +1,7 @@
 extern crate beginner_tools;
 use beginner_tools::input;
 
-
-fn calculate_hope(variables: Vec<f32>, probabilities: Vec<f32>) {
-    let mut hope: f32 = 0.0;
-    for indexes in 0..variables.len() {
-        hope += variables[indexes] * probabilities[indexes];
-    }
-    println!("{}", hope);
-}
+mod calculate_resum;
 
 fn main() {
 
@@ -55,7 +48,7 @@ fn main() {
             println!("Error! The sum of probabilities mut be 1.0. Try again.");
             main();
         } else {
-            calculate_hope(variables, probabilities);
+            calculate_resum::calculate_media(variables, probabilities);
         }
     
     } else {
